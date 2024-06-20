@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Assistência Técnica</title>
+    <!-- GOOGLE FONTES / BOOTSTRAP -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- fim -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <meta name="description" content="Explorando o mundo dos dados">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header id="header">
+        <div class="interface">
+            <div class="logo">
+                <a href="#">
+                    <span>Fox Tech <i class="bi bi-browser-firefox"></i></span>
+                </a>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#solicitacao">Enviar Solicitação</a></li>
+                    <li><a href="https://wa.me/5585992402160" target="_blank">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <header class="main-header">
+            <h1>Bem-vindo à Fox Tech</h1>
+        </header>
+        <section id="solicitacao">
+            <h2>Envie sua Solicitação</h2>
+            <div class="container">
+                <div class="steps">
+                    <h3>Como pedir um orçamento:</h3>
+                    <ul>
+                        <li><i class="bi bi-check-circle"></i> Descreva o problema do seu PC em detalhes.</li>
+                        <li><i class="bi bi-check-circle"></i> Informe o modelo e especificações do seu computador.</li>
+                        <li><i class="bi bi-check-circle"></i> Se for uma criação de bot de automação, descreva o objetivo e funcionalidades desejadas.</li>
+                        <li><i class="bi bi-check-circle"></i> Envie seus dados de contato para que possamos retornar com um orçamento detalhado.</li>
+                    </ul>
+                </div>
+                <div class="form-container">
+                    <form id="solicitacaoForm">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                        <label for="whatsapp">Whatsapp:</label>
+                        <input type="whatsapp" id="whatsapp" name="whatsapp" required>
+                        <label for="descricao">Descrição do Problema:</label>
+                        <textarea id="descricao" name="descricao" required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                    <p id="mensagem"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
